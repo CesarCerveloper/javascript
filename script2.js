@@ -15,7 +15,7 @@ alert("Sus datos personales: "+ nombre +" "+ edad+ " años");
 
 // Crear simulador de crédito de autos 
 
-let cantidad= prompt("Ingrese el monto que desea financiar");
+let cantidad= prompt("Ingrese la cantidad que desea financiar");
 let plazo= prompt("Ingrese el plazo al que desea el financiamiento: ¿24, 36 o 48 meses?");
 let sueldo= prompt("¿Cuál es su salario mensual?");
 

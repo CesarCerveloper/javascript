@@ -1,19 +1,6 @@
 
-// Pruebas **
-/* let entrada = prompt("Ingresa tu apuesta");
-let salida = entrada + " " + "es tu apuesta";
-alert(salida);
 
-
-let nombre= prompt("Ingrese su nombre completo");
-alert("Bienvenid@ a mi sitio web "+nombre);
-let edad= prompt("Cual es su edad?");
-alert("Su edad es de "+ edad +" años");
-alert("Sus datos personales: "+ nombre +" "+ edad+ " años");
-
-*/
-
-// Crear simulador de crédito de autos 
+// Primer entrega ** Crear simulador de crédito de autos 
 
 let cantidad= prompt("Ingrese la cantidad que desea financiar");
 let plazo= prompt("Ingrese el plazo al que desea el financiamiento: ¿24, 36 o 48 meses?");
@@ -22,7 +9,12 @@ let sueldo= prompt("¿Cuál es su salario mensual?");
 /* alert("Sus datos ingresados son: \n" + "Cantidad a financiar: $"+ cantidad + " pesos " + "\n" + "Plazo deseado: "+ plazo + " meses " +"\n" + "Salario mensual: $" + sueldo + " pesos");
 */
 
-let respuesta= confirm ("Confirma que sus datos ingresados son: \n" + "Cantidad a financiar: $"+ cantidad + " pesos " + "\n" + "Plazo deseado: "+ plazo + " meses " +"\n" + "Salario mensual: $" + sueldo + " pesos");
+let cantidad_correcta = parseInt (cantidad);
+let sueldo_correcto = parseInt (sueldo);
+
+// const interes_24 = 
+
+let respuesta= confirm ("Confirma que sus datos ingresados son: \n" + "Cantidad a financiar: $"+ cantidad_correcta + " pesos " + "\n" + "Plazo deseado: "+ plazo + " meses " +"\n" + "Salario mensual: $" + sueldo_correcto + " pesos");
 
 if (respuesta) {
 
@@ -31,4 +23,10 @@ if (respuesta) {
 } else {
 
     alert("Recarga la página y vuelve a ingresar tus datos")
+}
+
+function confirmar_datos() {
+
+    let respuesta= confirm ("Confirma que sus datos ingresados son: \n" + "Cantidad a financiar: $"+ cantidad_correcta + " pesos " + "\n" + "Plazo deseado: "+ plazo + " meses " +"\n" + "Salario mensual: $" + sueldo_correcto + " pesos");
+
 }
